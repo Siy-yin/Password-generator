@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="card">
+        <h1>Generate a <span>random password</span></h1>
+        <p>Never use an insecure password again</p>
+        <div class="input-row">
+            <div class="input-wrapper">
+                <input id="password-length" type="number" min="12" placeholder=" " />
+                <label for="password-length">Length</label>
+            </div>
+            <button id="generate-el" onclick="createPassword()">Generate passwords</button>
+        </div>
+        <div id="straightline"></div>
+        <div id="pw-wrapper">
+            <div class="pw-container">
+                <div id="pw1" class="pw-box"></div>
+                <button class="copy-btn" data-target="pw1" aria-label="Copy password">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path d="M10 1.5H2A1.5 1.5 0 0 0 .5 3v10A1.5 1.5 0 0 0 2 14.5h8a1.5 1.5 0 0 0 1.5-1.5V3A1.5 1.5 0 0 0 10 1.5zm1 11.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v10z"/>
+                <path d="M4 4h6v1H4V4zm0 2h6v1H4V6zm0 2h3v1H4V8z"/>
+            </svg>
+        </button>
+            </div>
+            <div class="pw-container">
+                <div id="pw2" class="pw-box"></div>
+                <button class="copy-btn" data-target="pw2" aria-label="Copy password">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path d="M10 1.5H2A1.5 1.5 0 0 0 .5 3v10A1.5 1.5 0 0 0 2 14.5h8a1.5 1.5 0 0 0 1.5-1.5V3A1.5 1.5 0 0 0 10 1.5zm1 11.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v10z"/>
+                <path d="M4 4h6v1H4V4zm0 2h6v1H4V6zm0 2h3v1H4V8z"/>
+            </svg>
+        </button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
